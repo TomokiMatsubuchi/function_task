@@ -7,3 +7,10 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
+
+<% if @user.profile_image.attached? %>
+  <p>
+    <strong>ProfileImage:</strong>
+    <%= image_tag @user.profile_image.variant(resize_to_limit: [100,100]) %>
+  </p>
+<% end %>
