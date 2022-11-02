@@ -28,6 +28,8 @@ gem 'image_processing', '~> 1.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'sidekiq'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -38,6 +40,7 @@ group :development, :test do
   gem 'faker'
   gem 'launchy'
   gem 'rexml'
+  gem 'letter_opener_web'
 end
 
 group :development do
